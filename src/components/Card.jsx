@@ -1,4 +1,4 @@
-import "../styles/Card.css";
+import "../styles/components/Card.css";
 
 import { MdMenuBook } from "react-icons/md";
 

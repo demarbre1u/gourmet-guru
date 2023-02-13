@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+}
+
+
+.hompage {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(/img/home.jpg);
+    background-size: cover;
+    background-position: center 70%;
+
+    position: relative;
+}
+
+.home__title {
+    position: absolute;
+    font-size: 4em;
+    left: 50px;
+    top: 35%;
+}
+
+.home__subtitle {
+    position: absolute;
+    font-size: 1.8em;
+    color:lightgrey;
+    left: 52px;
+    top: 46%;
+}
+
+.option-list {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+}
+
+.option {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .35);
+    border-radius: 5px;
+    width: 250px;
+    margin: 20px;
+    cursor: pointer;
+
+    transition: background-color 300ms, transform 300ms;
+}
+
+.option:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, .5);
+
+    transition: background-color 300ms, transform 300ms;
+}

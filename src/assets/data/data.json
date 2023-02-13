@@ -2,6 +2,11 @@
     "data": [
         { "name": "O Tacos", "img" : "o-tacos.jpeg", "url": "https://o-tacos.com/" },
         { "name": "Pepe Chicken", "img" : "pepe-chicken.webp", "url": "https://www.pepechicken.fr/produits/" },
-        { "name": "McDonald's", "img" : "macdo.png", "url": "https://www.mcdonalds.fr/nos-produits/menus" }
+        { "name": "McDonald's", "img" : "macdo.png", "url": "https://www.mcdonalds.fr/nos-produits/menus" },
+        { "name": "Burger King", "img" : "bk.jpeg", "url": "https://www.burgerking.fr/carte" },
+        { "name": "KFC", "img" : "kfc.jpeg", "url": "https://www.kfc.fr/notre-carte" }, 
+        { "name": "Ô Noodle", "img" : "onoodle.png", "url": "https://onoodle54000.com/menu" },
+        { "name": "Nemo", "img" : "nemo.jpeg", "url": "https://www.nemobowl.fr/menu-1" },
+        { "name": "Pokawa", "img" : "poke-bowl.jpg", "url": "https://pokawa.com/fr_fr/notre-carte/" }
     ]
 }
