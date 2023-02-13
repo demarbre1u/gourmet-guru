@@ -8,6 +8,21 @@
   flex-direction: row;
 }
 
+.card-wrapper {
+  transition: transform 1000ms; 
+
+  animation: fadeIn 3000ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+  } 
+}
+
 .card__button {
   background-color: transparent;
   border: none;
@@ -25,4 +40,58 @@
 
 .winner {
   font-size: 2.5em;
+}
+
+.fadeLeft {
+  transform: translateX(-200%);
+
+  transition: transform 1000ms;
+}
+
+.fadeRight {
+  transform: translateX(200%);
+
+  transition: transform 1000ms;
+}
+
+.card-winner {
+  animation: falling 1000ms ease-in;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.reset-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
+  background-color: rgba(255, 255, 255, .4);
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.reset-button:hover {
+  background-color: rgba(255, 255, 255, .8);
+
+  transition: background-color 300ms;
+}
+
+.step-count {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  font-size: 1.3em;
 }
