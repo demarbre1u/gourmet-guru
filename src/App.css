@@ -1,0 +1,28 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.card__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, .75);
+  transition: color 300ms;
+}
+
+.card__button:hover {
+  color: rgba(192, 57, 43, .75);
+
+  transition: color 300ms;
+}
+
+.winner {
+  font-size: 2.5em;
+}

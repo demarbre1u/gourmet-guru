@@ -1,0 +1,7 @@
+{
+    "data": [
+        { "name": "O Tacos", "img" : "o-tacos.jpeg", "url": "https://o-tacos.com/" },
+        { "name": "Pepe Chicken", "img" : "pepe-chicken.webp", "url": "https://www.pepechicken.fr/produits/" },
+        { "name": "McDonald's", "img" : "macdo.png", "url": "https://www.mcdonalds.fr/nos-produits/menus" }
+    ]
+}
