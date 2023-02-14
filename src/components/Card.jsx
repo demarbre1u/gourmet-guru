@@ -11,7 +11,7 @@ export default function Card(props) {
     };
 
     return (
-        <div className="card" style={{ backgroundImage: `url(/img/restaurants/${img})` }} onClick={openLink}>
+        <div className="card" style={{ backgroundImage: `url(./img/restaurants/${img})` }} onClick={openLink}>
             <span className="card__title">{name}</span>
 
             <div className="card__menu">

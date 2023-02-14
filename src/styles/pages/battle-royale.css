@@ -37,7 +37,7 @@ body {
     z-index: -1;
   
     display: block;
-    background-image: url(/img/pages/battle-royale.jpg);
+    background-image: url(./../img/pages/battle-royale.jpg);
     background-size:cover;
     background-position: bottom;
     width: 100%;
@@ -86,13 +86,13 @@ body {
 }
 
 .fadeLeft {
-  transform: translateX(-200%);
+  transform: translateX(-100vw);
 
   transition: transform 1000ms;
 }
 
 .fadeRight {
-  transform: translateX(200%);
+  transform: translateX(100vw);
 
   transition: transform 1000ms;
 }
@@ -103,7 +103,7 @@ body {
 
 @keyframes falling {
   0% {
-    transform: translateY(-300%);
+    transform: translateY(-200vh);
   }
   100% {
     transform: translateY(0%);
