@@ -7,11 +7,15 @@ export default function Home() {
     return (
         <div className="hompage">
             <h1 className="home__title">Gourmet Guru</h1>
-            <p className="home__subtitle">Une app pour aider à choisir ce qu'on mange</p>
+            <p className="home__subtitle">
+                Une webapp pour aider à décider ce qu'on
+                <br />
+                mange quand Hugo refuse de collaborer
+            </p>
 
             <div className="option-list">
-                <div className="option" onClick={() => navigate("/battle-royal")}>
-                    <h2 className="option__title">Battle Royal</h2>
+                <div className="option" onClick={() => navigate("/battle-royale")}>
+                    <h2 className="option__title">Battle Royale</h2>
                     <p className="option__description">Il ne peut en rester qu'un</p>
                 </div>
 

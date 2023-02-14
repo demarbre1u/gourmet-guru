@@ -1,7 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home";
-import BattleRoyal from "./pages/battle-royal";
+import BattleRoyale from "./pages/battle-royale";
 
 const router = createBrowserRouter([
     {
@@ -9,8 +9,8 @@ const router = createBrowserRouter([
         element: <Home />
     },
     {
-        path: "/battle-royal",
-        element: <BattleRoyal />
+        path: "/battle-royale",
+        element: <BattleRoyale />
     }
 ]);
 

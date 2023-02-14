@@ -1,12 +1,27 @@
-import "../styles/pages/battle-royal.css";
+import "../styles/pages/battle-royale.css";
 import dataJson from "../assets/data/data.json";
 import Card from "../components/Card";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RxReset } from "react-icons/rx";
 import { useEffect, useRef, useState } from "react";
 import Confetti from "react-confetti";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { IoIosArrowBack } from "react-icons/io";
 
-export default function BattleRoyal() {
+const StyledLink = styled(Link)`
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+`;
+
+export default function BattleRoyale() {
     const [data, setData] = useState(dataJson.data);
 
     const firstCard = useRef();
@@ -74,6 +89,11 @@ export default function BattleRoyal() {
                     </button>
                 </div>
             )}
+
+            <StyledLink to="/">
+                <IoIosArrowBack />
+                Accueil
+            </StyledLink>
         </div>
     );
 }
