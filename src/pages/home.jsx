@@ -1,6 +1,6 @@
 import "../styles/pages/home.css";
 import { useNavigate } from "react-router-dom";
-
+import { FaGithub } from "react-icons/fa";
 export default function Home() {
     const navigate = useNavigate();
 
@@ -23,6 +23,13 @@ export default function Home() {
                     <h2 className="option__title">À venir</h2>
                     <p className="option__description">Cette option n'est pas encore disponible</p>
                 </div>
+            </div>
+
+            <div
+                className="github-link"
+                onClick={() => window.open("https://github.com/demarbre1u", "_blank", "noreferrer")}
+            >
+                <FaGithub fontSize="2em" />
             </div>
         </div>
     );
