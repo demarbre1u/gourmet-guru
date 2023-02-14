@@ -10,7 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-image: url(/img/home.jpg);
+    background-image: url(/img/pages/home.jpg);
     background-size: cover;
     background-position: center 70%;
 
@@ -27,7 +27,7 @@ body {
 .home__subtitle {
     position: absolute;
     font-size: 1.8em;
-    color:lightgrey;
+    color: rgb(230, 230, 230);
     left: 52px;
     top: 46%;
 }

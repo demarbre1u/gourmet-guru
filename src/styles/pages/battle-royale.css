@@ -37,7 +37,7 @@ body {
     z-index: -1;
   
     display: block;
-    background-image: url(/img/battle-royale.jpg);
+    background-image: url(/img/pages/battle-royale.jpg);
     background-size:cover;
     background-position: bottom;
     width: 100%;
