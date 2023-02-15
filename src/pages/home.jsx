@@ -18,11 +18,6 @@ export default function Home() {
                     <h2 className="option__title">Battle Royale</h2>
                     <p className="option__description">Il ne peut en rester qu'un</p>
                 </div>
-
-                <div className="option">
-                    <h2 className="option__title">À venir</h2>
-                    <p className="option__description">Cette option n'est pas encore disponible</p>
-                </div>
             </div>
 
             <div

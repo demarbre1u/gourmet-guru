@@ -1,8 +1,6 @@
-
 body {
     margin: 0;
 }
-
 
 .hompage {
     margin: 0;
@@ -34,7 +32,7 @@ body {
 
 .option-list {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -43,7 +41,7 @@ body {
 
 .option {
     text-align: center;
-    background-color: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, 0.35);
     border-radius: 5px;
     width: 250px;
     margin: 20px;
@@ -54,7 +52,7 @@ body {
 
 .option:hover {
     transform: scale(1.1);
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
 
     transition: background-color 300ms, transform 300ms;
 }
@@ -66,11 +64,11 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: 30px;
+    left: 30px;
 
     border-radius: 50%;
-    opacity: .7;
+    opacity: 0.7;
     cursor: pointer;
     background-color: black;
     width: var(--github-size);
