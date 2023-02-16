@@ -1,0 +1,28 @@
+.modal-wrapper {
+    height: 75%;
+    width: min(600px, 80%);
+    background-color: #242424;
+
+    border-radius: 5px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+    box-shadow: 0 5px 5px #171717;
+
+}
+
+.modal-header__title {
+    margin: 0;
+}
+
+.modal-header__button {
+    cursor: pointer;
+}
+
+.modal-body {
+}
