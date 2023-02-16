@@ -8,6 +8,12 @@
     animation: fadeOut 300ms;
 }
 
+.backdrop--closed {
+    background-color: transparent;
+
+    transition: background-color 300ms;
+}
+
 @keyframes fadeOut {
     0% {
         background-color: transparent;

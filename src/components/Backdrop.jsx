@@ -1,11 +1,14 @@
+import { forwardRef } from "react";
 import "../styles/components/Backdrop.css";
 
-export default function Backdrop(props) {
+function Backdrop(props, ref) {
     const { children, onClick } = props;
 
     return (
-        <div className="backdrop" onClick={onClick}>
+        <div ref={ref} className="backdrop" onClick={onClick}>
             {children}
         </div>
     );
 }
+
+export default forwardRef(Backdrop);

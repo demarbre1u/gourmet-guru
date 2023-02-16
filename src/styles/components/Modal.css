@@ -23,6 +23,12 @@
     }
 }
 
+.modal-wrapper--closed {
+    transform: translateY(-100vh);
+
+    transition: transform 500ms;
+}
+
 .modal-header {
     display: flex;
     justify-content: space-between;

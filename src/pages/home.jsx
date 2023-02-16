@@ -43,7 +43,7 @@ export default function Home() {
             <Modal title="Menu" isOpen={open} closeModal={() => setOpen(false)}>
                 <div className="menu-list">
                     {dataJson.data.map(item => (
-                        <MenuItem name={item.name} img={item.img} url={item.url} />
+                        <MenuItem key={item.name} name={item.name} img={item.img} url={item.url} />
                     ))}
                 </div>
             </Modal>
