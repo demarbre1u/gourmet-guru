@@ -3,7 +3,24 @@
     width: min(600px, 80%);
     background-color: #242424;
 
+    position: absolute;
+
+    left: 50%;
+    top: -100vh;
+    translate: -50% -50%;
+
+    animation: dropping 500ms 100ms ease-in forwards;
+
     border-radius: 5px;
+}
+
+@keyframes dropping {
+    0% {
+        top: -100vh;
+    }
+    100% {
+        top: 50%;
+    }
 }
 
 .modal-header {
@@ -13,7 +30,6 @@
 
     padding: 10px 20px;
     box-shadow: 0 5px 5px #171717;
-
 }
 
 .modal-header__title {
@@ -22,7 +38,4 @@
 
 .modal-header__button {
     cursor: pointer;
-}
-
-.modal-body {
 }

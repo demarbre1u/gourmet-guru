@@ -1,7 +1,7 @@
 .menu-item-wrapper {
     position: relative;
     cursor: pointer;
-
+    overflow-x: hidden;
     --height: 100px;
 }
 

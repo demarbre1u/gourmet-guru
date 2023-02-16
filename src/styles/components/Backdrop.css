@@ -3,9 +3,16 @@
     width: 100vw;
     height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     background-color: rgba(0, 0, 0, .6);
+
+    animation: fadeOut 300ms;
+}
+
+@keyframes fadeOut {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: rgba(0, 0, 0, .6);
+    }
 }
