@@ -34,5 +34,23 @@
     align-items: center;
 
     text-shadow: 0px 0px 10px black;
+}
 
+.menu-item__icon {
+    position: absolute;
+    height: var(--height);
+    transform: translateY(calc(-1 * var(--height)));
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: -50%;
+
+    transition: right 300ms;
+}
+
+.menu-item-wrapper:hover .menu-item__icon {
+    right: 20px;
+
+    transition: right 500ms;
 }
