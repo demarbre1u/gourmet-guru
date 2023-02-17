@@ -15,7 +15,7 @@
         { "name": "Burger Factory", "img": "burger-factory.jpeg", "url": "https://www.ubereats.com/fr/store/the-burger-factory/olAbhuuLRcul7sUk_RZySg?diningMode=DELIVERY&ps=1"},
         { "name": "TT Black Burger", "img": "tt-black-burger.png", "url": "https://www.ubereats.com/fr/store/tt-black-burger/qf907WtlWrGX1UK5wVr9DQ?diningMode=DELIVERY&ps=1"},
         { "name": "Voyou", "img": "voyou.jpeg", "url": "https://www.ubereats.com/fr/store/voyou-delivery/2as_YjVKSTqVT3V27QA2ag?diningMode=DELIVERY"},
-        { "name": "Papa Fries", "img": "papa-fries.jpeg", "url": "/"},
+        { "name": "Papa Fries", "img": "papa-fries.jpeg", "url": "https://github.com/demarbre1u/gourmet-guru/blob/main/public/img/menus/papa-fries-menu.jpeg?raw=true"},
         { "name": "Basilic & Co", "img": "basilic.webp", "url": "https://www.ubereats.com/fr/store/basilic-%26-co-nancy/NCrZEupDRE-w7OgLK8wXyA?diningMode=DELIVERY"},
         { "name": "Waffle Factory", "img": "waffle-factory.jpeg", "url": "https://www.ubereats.com/fr/store/waffle-factory-centre-ville-nancy/j6bJQsXcUW2T2RCBfIQT-Q?diningMode=DELIVERY"},
         { "name": "Carré de Liège", "img": "carre-de-liege.jpeg", "url": "https://www.ubereats.com/fr/store/le-carre-de-liege/YbTZ_khNWdqy6Lmn-l1t8A?diningMode=DELIVERY"},
