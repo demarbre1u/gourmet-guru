@@ -26,6 +26,11 @@ export default function Home() {
                     <h2 className="option__title">Battle Royale</h2>
                     <p className="option__description">Il ne peut en rester qu'un</p>
                 </div>
+
+                <div className="option" onClick={() => navigate("/wheel")}>
+                    <h2 className="option__title">La roue</h2>
+                    <p className="option__description">Une super roue</p>
+                </div>
             </div>
 
             <div className="navigation-links">

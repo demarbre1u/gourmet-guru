@@ -2,6 +2,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home";
 import BattleRoyale from "./pages/battle-royale";
+import { Wheel } from "./pages/wheel";
 
 const router = createBrowserRouter(
     [
@@ -12,6 +13,10 @@ const router = createBrowserRouter(
         {
             path: "/battle-royale",
             element: <BattleRoyale />
+        },
+        {
+            path: "/wheel",
+            element: <Wheel />
         }
     ],
     {
