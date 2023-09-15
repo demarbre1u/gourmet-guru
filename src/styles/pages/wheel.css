@@ -7,8 +7,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 
+    background-image: url(/img/pages/wheel.jpeg);
+    background-size: cover;
+    background-position: center 70%;
+
     --wheel-size: 500px;
-    --wheel-indicator-color: black;
+    --wheel-indicator-color: rgb(255, 192, 55);
+    --wheel-outline-color: #e2e2e2;
+    --wheel-inner-color: #3b3b3b;
 }
 
 .wheel-page {
@@ -28,10 +34,17 @@ body {
 }
 
 .propositions {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 8px;
     flex: 1;
     resize: none;
 }
-  
+
+.propositions::placeholder {
+    color: lightgrey;
+}
+
 .wheel-wrapper {
     position: relative;
 
@@ -47,7 +60,8 @@ body {
     width: var(--wheel-size);
     height: var(--wheel-size);
     border-radius: 50%;
-    border: 5px solid #333;
+    border: 5px solid var(--wheel-outline-color);
+    background-color: var(--wheel-inner-color);
     overflow: hidden;
 }
 
@@ -88,13 +102,22 @@ body {
     font-weight: bold;
 }
 
-.section-label {
+.section-label-wrapper {
     color: white;
     font-size: 30px;
     z-index: 1;
     text-align: start;
-    width: 90%;
+    width: 90%; 
 }
+
+.section-label {
+    display: block;
+    width: 42%; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 button {
     padding: 10px 20px;
@@ -102,3 +125,6 @@ button {
     cursor: pointer;
 }
   
+button:disabled {
+    cursor: not-allowed;
+}

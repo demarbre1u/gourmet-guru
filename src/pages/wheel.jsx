@@ -7,13 +7,14 @@ export const Wheel = () => {
 
     const [optionList, setOptionList] = useState([]);
     const [sections, setSections] = useState([]);
+    const [isSpinning, setIsSpinning] = useState(false);
 
     useEffect(() => {
         const sectionList = [];
 
         optionList.forEach((option, index) => {
-            const start = (360 / sections.length) * index;
-            const end = (360 / sections.length) * (index + 1);
+            const start = (360 / optionList.length) * index;
+            const end = (360 / optionList.length) * (index + 1);
 
             const backgroundColor = `conic-gradient(transparent ${start}deg, ${getColor(
                 index
@@ -25,8 +26,8 @@ export const Wheel = () => {
 
             sectionList.push(
                 <div key={index} className="section" style={{ background: backgroundColor }}>
-                    <span className="section-label" style={{ rotate: labelRotate }}>
-                        {option}
+                    <span className="section-label-wrapper" style={{ rotate: labelRotate }}>
+                        <span className="section-label">{option}</span>
                     </span>
                 </div>
             );
@@ -59,10 +60,12 @@ export const Wheel = () => {
         }
     }
 
-    let deg = 0;
+    const deg = useRef(0);
     function spin() {
         // Generate a random number of spins (4-6 spins in this case)
-        const spins = 4 + Math.floor(Math.random() * 3);
+        const baseSpinNumber = 4;
+        const additionalSpins = Math.floor(Math.random() * 3);
+        const spins = baseSpinNumber + additionalSpins;
 
         // Calculate the total rotation (360 degrees per spin)
         const totalRotation = 360 * spins;
@@ -72,19 +75,18 @@ export const Wheel = () => {
 
         // Calculate the final rotation angle
         const finalRotation = totalRotation + offset;
-
-        deg += finalRotation;
+        deg.current += finalRotation;
 
         // Apply the rotation to the wheel
         wheel.current.style.transition = "transform 3s ease-out";
-        wheel.current.style.transform = `rotate(${deg}deg)`;
+        wheel.current.style.transform = `rotate(${deg.current}deg)`;
 
         // Disable the spin button while spinning to avoid multiple spins
-        document.querySelector("button").disabled = true;
+        setIsSpinning(true);
 
         // After the spinning animation ends, enable the spin button again
         setTimeout(() => {
-            document.querySelector("button").disabled = false;
+            setIsSpinning(false);
         }, 3000);
     }
 
@@ -99,8 +101,16 @@ export const Wheel = () => {
             </div>
 
             <div className="right-panel">
-                <textarea className="propositions" ref={textarea} onChange={onChange}></textarea>
-                <button onClick={spin}>SPIN</button>
+                <textarea
+                    className="propositions"
+                    ref={textarea}
+                    onChange={onChange}
+                    disabled={isSpinning}
+                    placeholder="Entrez vos propositions séparées par des sauts de ligne"
+                ></textarea>
+                <button disabled={isSpinning || sections.length === 0} onClick={spin}>
+                    SPIN
+                </button>
             </div>
         </div>
     );
