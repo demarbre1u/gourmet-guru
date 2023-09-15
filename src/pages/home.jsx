@@ -23,13 +23,13 @@ export default function Home() {
 
             <div className="option-list">
                 <div className="option" onClick={() => navigate("/battle-royale")}>
-                    <h2 className="option__title">Battle Royale</h2>
+                    <h2 className="option__title">⚔️ Battle Royale ⚔️</h2>
                     <p className="option__description">Il ne peut en rester qu'un</p>
                 </div>
 
                 <div className="option" onClick={() => navigate("/wheel")}>
-                    <h2 className="option__title">La roue</h2>
-                    <p className="option__description">Une super roue</p>
+                    <h2 className="option__title"> 🎲 La roue 🎲</h2>
+                    <p className="option__description">Pour laisser faire le hasard</p>
                 </div>
             </div>
 

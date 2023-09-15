@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/pages/wheel.css";
+import { IoIosArrowBack } from "react-icons/io";
+import { StyledLink } from "../components/StyledLink";
 
 export const Wheel = () => {
     const wheel = useRef();
@@ -112,6 +114,11 @@ export const Wheel = () => {
                     SPIN
                 </button>
             </div>
+
+            <StyledLink to="/">
+                <IoIosArrowBack />
+                Accueil
+            </StyledLink>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-body {
+.wheel-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +15,7 @@ body {
     --wheel-indicator-color: rgb(255, 192, 55);
     --wheel-outline-color: #e2e2e2;
     --wheel-inner-color: #3b3b3b;
-}
 
-.wheel-page {
     display: flex;
     justify-content: space-between;
 

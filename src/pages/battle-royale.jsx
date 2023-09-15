@@ -5,21 +5,8 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RxReset } from "react-icons/rx";
 import { useEffect, useRef, useState } from "react";
 import Confetti from "react-confetti";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
 import { IoIosArrowBack } from "react-icons/io";
-
-const StyledLink = styled(Link)`
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    font-size: 1.8em;
-    color: white;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-`;
+import { StyledLink } from "../components/StyledLink";
 
 export default function BattleRoyale() {
     const [data, setData] = useState(dataJson.data);
