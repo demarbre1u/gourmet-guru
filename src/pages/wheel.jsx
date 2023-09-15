@@ -39,8 +39,6 @@ export const Wheel = () => {
         const values = e.target.value;
         const valuesArray = values.split("\n").filter(value => value && value !== "\n");
 
-        console.log({ valuesArray });
-
         setOptionList(valuesArray);
     }
 
