@@ -91,7 +91,7 @@ export const Wheel = () => {
     }
 
     return (
-        <>
+        <div className="wheel-page">
             <div className="wheel-wrapper">
                 <div ref={wheel} className="wheel" id="wheel">
                     {sections.map(section => section)}
@@ -100,9 +100,10 @@ export const Wheel = () => {
                 <div className="wheel-indicator-head"></div>
             </div>
 
-            <textarea ref={textarea} onChange={onChange}></textarea>
-
-            <button onClick={spin}>SPIN</button>
-        </>
+            <div className="right-panel">
+                <textarea className="propositions" ref={textarea} onChange={onChange}></textarea>
+                <button onClick={spin}>SPIN</button>
+            </div>
+        </div>
     );
 };
